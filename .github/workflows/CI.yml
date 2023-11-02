@@ -1,4 +1,4 @@
-env:
+ env:
   repo:            "https://github.com/yasinozturk3580/artemis"
   app_version:     "3.0.0"
   repo_region:     "us-central1"
