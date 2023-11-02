@@ -1,10 +1,11 @@
- env:
+env:
   repo:            "https://github.com/yasinozturk3580/artemis"
-  app_version:     "3.0.0"
+  app_version:     "2.0.0"
   repo_region:     "us-central1"
-  project_id:      "${{ secrets.PROJECT_ID }}"
+  project_id:      "${{ secrets.project_id }}"
   app_name:        "artemis"
-  tag_new_version: "${GITHUB_SHA}
+  tag_new_version: "${GITHUB_SHA}"
+
 
 
 
@@ -39,6 +40,10 @@ jobs:
       - name: Clone a repo
         run: |
           git clone ${{ env.repo }}  
+
+      
+
+
 
 
       # Runs a set of commands using the runners shell
